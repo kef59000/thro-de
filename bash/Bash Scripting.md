@@ -29,7 +29,7 @@ Try the following command
 
     echo "Hi THRO"
 
-# Exercise 1: Creating your first Bash script
+# Exercise 1: First Steps
 Create a file named **my_bash.sh** using the nano command (basically, you can use any editor of your choice , e.g., vim).
 
 ## Step 1: Create your script
@@ -69,10 +69,10 @@ Try the following again:
     ./my_bash.sh
 
 
-# Exercise 2: Variables
+# Exercise 2: Variables 1
 Create a bash file with [this code](./bash_02_Variables-1.sh). There are different options to determin the outcome...
 
-# Exercise 3: System Variables, Math
+# Exercise 3: Variables 2
 Create a bash file with [this code](./bash_03_Variables-2.sh). 
 
 ## Setting system variables
@@ -119,10 +119,10 @@ Type in the following code:
     echo $(( $RANDOM % 10 ))
 
 
-# Exercise 4: Conditionals
+# Exercise 4: Branching
 Create a bash file with [this code](./bash_04_Branching.sh). 
 
-# Exercise 5: Loops
+# Exercise 5: Looping
 Create a bash file with [this code](./bash_05_Looping.sh).
 
 Note:

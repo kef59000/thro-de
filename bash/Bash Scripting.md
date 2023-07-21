@@ -5,8 +5,6 @@ Install Docker Desktop on your local machine. Then, run the following code block
     docker pull ubuntu
     docker run -it ubuntu bash
 
-Read more [here](./bash_01.sh) # It works!
-
 # Basics
 ## Basic Commands
 In the running container, try the following statements. What are they doing?
@@ -41,20 +39,8 @@ In your terminal, run the following code:
 
     vim run_all.sh
 
----
-#!/bin/bash
-
-echo "Today is " \`date`
-
-echo "Enter the path to directory"
-
-read the_path
-
-echo "Your path has the following files and folders: "
-
-ls $the_path
-
----
+Enter [this code](./bash_01.sh).  
+Then, alter the permission:
 
     chmod u+x run_all.sh
 
@@ -85,31 +71,15 @@ ls $the_path
 ## Input and output in Bash scripts
 ### Gathering input
 #### 1. Reading the user input and storing it in a variable
-We can read the user input using the **read** command.
-
-    #!/bin/bash
-    echo "What's your name"
-
-    read my_name
-
-    echo "Hello" $my_name
+We can read the user input using the **read** command. [>>>](./bash_02.sh)
 
 #### 2. Reading from a file
-This code reads each line from a file named **input.txt** and prints it to the terminal. We'll study while loops later in this article.
-
-    #!/bin/bash
-    while read line
-    do
-        echo $line
-    done < input.txt
+This code reads each line from a file named **input.txt** and prints it to the terminal. [>>>](./bash_03.sh)
 
 #### 3. Command line arguments
 In a bash script or function, **$1** denotes the initial argument passed, **$2** denotes the second argument passed, and so forth.
 
-This script takes a name as a command-line argument and prints a personalized greeting.
-
-    #!/bin/bash
-    echo "Hello, $1!"
+This script takes a name as a command-line argument and prints a personalized greeting. [>>>](./bash_04.sh)
 
 ### Displaying output
 #### 1. Printing to the terminal
@@ -175,40 +145,16 @@ We can use logical operators such as AND -a and OR -o to make comparisons that h
 
     if [ $a -gt 60 -a $b -lt 100 ]
 
-Example:
-
-    #!/bin/bash
-
-    echo "Please enter a number: "
-    read num
-
-    if [ $num -gt 0 ]; then
-        echo "$num is positive"
-    elif [ $num -lt 0 ]; then
-        echo "$num is negative"
-    else
-        echo "$num is zero"
-    fi
+Example: [>>>](./bash_05.sh)
 
 ## Looping and Branching in Bash
 ### While loop
 
-    #!/bin/bash
-    i=1
-    while [[ $i -le 10 ]] ; do
-    echo "$i"
-    (( i += 1 ))
-    done
-
+Example: [>>>](./bash_06.sh)
 
 ### For loop
 
-    #!/bin/bash
-
-    for i in {1..5}
-    do
-        echo $i
-    done
+Example: [>>>](./bash_07.sh)
 
 ### Case statements
 In Bash, case statements are used to compare a given value against a list of patterns and execute a block of code based on the first pattern that matches. The syntax for a case statement in Bash is as follows:
@@ -280,44 +226,22 @@ The **crontab** utility is used to add and edit the cron jobs. **crontab -l** li
 ## Set the set -x option
 One of the most useful techniques for debugging Bash scripts is to set the set -x option at the beginning of the script. This option enables debugging mode, which causes Bash to print each command that it executes to the terminal, preceded by a + sign. This can be incredibly helpful in identifying where errors are occurring in your script.
 
-    #!/bin/bash
-
-    set -x
-
-    # Your script goes here
-
+Example: [>>>](./bash_08.sh)
 
 ## Check the exit code
 When Bash encounters an error, it sets an exit code that indicates the nature of the error. You can check the exit code of the most recent command using the $? variable. A value of 0 indicates success, while any other value indicates an error.
 
-    #!/bin/bash
-
-    # Your script goes here
-
-    if [ $? -ne 0 ]; then
-        echo "Error occurred."
-    fi
-
+Example: [>>>](./bash_09.sh)
 
 ## Use echo statements
 Another useful technique for debugging Bash scripts is to insert echo statements throughout your code. This can help you identify where errors are occurring and what values are being passed to variables.
 
-    #!/bin/bash
-
-    # Your script goes here
-
-    echo "Value of variable x is: $x"
-
-    # More code goes here
+Example: [>>>](./bash_10.sh)
 
 ## Use the set -e option
 If you want your script to exit immediately when any command in the script fails, you can use the set -e option. This option will cause Bash to exit with an error if any command in the script fails, making it easier to identify and fix errors in your script.
 
-    #!/bin/bash
-
-    set -e
-
-    # Your script goes here
+Example: [>>>](./bash_11.sh)
 
 ## Troubleshooting crons by verifying logs
 We can troubleshoot crons using the log files. Logs are maintained for all the scheduled jobs. You can check and verify in logs if a specific job ran as intended or not.
@@ -342,54 +266,9 @@ A cron job log file can look like this:
 
 # Various stuff
 
-    #!/bin/bash
+- Example: [>>>](./bash_12.sh)
+- Example: [>>>](./bash_13.sh)
 
-    echo "Hi"
-
-    sleep 3
-
-    echo "3 seconds have passed"
-
-    ====
-
-    #!/bin/bash
-
-    # name="DE"
-
-    # echo "What is your name?"
-    # read name
-
-    name=$1
-    daytime=$2
-
-    user=$(whoami)
-    date=$(date)
-    whereami=$(pwd)
-
-    echo "Good $daytime $name!"
-    sleep 1
-    echo "You are looking good today $name!"
-    sleep 1
-    echo "That's amazing $name!"
-    sleep 2
-
-    echo "You are currently logge in as $user and you are in the directory $whereami. Also, today is: $date"
-
-    ====
-
-    echo "$PWD, $SHELL, $USER, $HOSTNAME"
-
-    # environment variable (system wide)
-    export my_var
-
-    # make this permanent -> set it as permanent env variable
-    #  store it in .bashrc
-
-    # get hidden files
-    ls -al
-
-    nano .bashrc
-    export my_var="Flo"
 
 
 # Permissions
@@ -397,7 +276,7 @@ A cron job log file can look like this:
     touch de.sh
     ./de.sh
 
-    ls -l
+    ls -l 
 
     chmod +x de.sh
 

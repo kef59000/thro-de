@@ -126,13 +126,13 @@ Create a bash file with [this code](./bash_04_Ex-04.sh).
 Create a bash file with [this code](./bash_05_Ex-05.sh).
 
 Note:
-- <mark style="background-color: #DCDCDC">Ctrl + C</mark> breaks an infinite loop.
-- <mark style="background-color: #DCDCDC">break</mark> breaks the loop
-- <mark style="background-color: #DCDCDC">continue</mark> skips the iteration
+- **Ctrl + C** ...breaks an infinite loop.
+- **break** ...breaks the loop
+- **continue** ...skips the iteration
 
 Create a file named "cities.txt" and put in these cities, each in a new row: paris, nyc, london
 
-# Basic Bash commands (echo, read, etc.)
+# Basic Bash commands
 
 | Command    | Description |
 | -------- | ------- |

@@ -5,7 +5,7 @@ Install Docker Desktop on your local machine. Then, run the following code block
     docker pull ubuntu
     docker run -it ubuntu bash
 
-Read more [here](./flo.md) # It works!
+Read more [here](./bash_01.sh) # It works!
 
 # Basics
 ## Basic Commands

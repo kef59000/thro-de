@@ -24,7 +24,7 @@ Alternatively:
     
     which bash
     
-# First steps
+# Using the Command Line
 Try the following command
 
     echo "Hi THRO"

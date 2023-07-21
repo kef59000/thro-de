@@ -112,7 +112,7 @@ Add a new line to this file
 
 Next time you log in to your system, the variable will be set. So, you made it permanent.
 
-# Doing some Bash math
+## Doing some Bash math
 Type in the following code:
 
     echo $(( 2 + 3 ))

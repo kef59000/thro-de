@@ -70,7 +70,7 @@ Try the following again:
 
 
 # Exercise 2: Variables 1
-Create a bash file with [this code](./bash_02_Variables-1.sh). There are different options to determin the outcome...
+Create a bash file with [this code](./bash_02_Variables-1.sh). There are different options to determine the outcome...
 
 # Exercise 3: Variables 2
 Create a bash file with [this code](./bash_03_Variables-2.sh). 

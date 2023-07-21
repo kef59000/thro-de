@@ -132,7 +132,7 @@ Note:
 
 Create a file named "cities.txt" and put in these cities, each in a new row: paris, nyc, london
 
-# Basic Bash commands
+# Basic Bash Commands
 
 | Command    | Description |
 | -------- | ------- |

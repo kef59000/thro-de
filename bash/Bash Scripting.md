@@ -6,14 +6,14 @@ Install Docker Desktop on your local machine. Then, run the following code block
     docker pull ubuntu
     docker run -it ubuntu bash
 
-## Installing a text editor
-Install the text editor **nano** and/or **vim**
+## Installing the required software packages
+Install the text following software packages:
 
     apt update
     apt install nano
-
-    apt-get update
-    apt-get install vim
+    apt install vim
+    apt install iputils-ping
+    apt install curl
 
 ## Determine which Shell you are using:
 Type in the following command:
@@ -129,11 +129,6 @@ Note:
 - Ctrl + C breaks an infinite loop.
 - break breaks the loop
 - continue skips the iteration
-
-Maybe you have to install the ping and the curl tool:
-
-    apt install iputils-ping
-    apt install curl
 
 Create a file named "cities.txt" and put in these cities, each in a new row: paris, nyc, london
 

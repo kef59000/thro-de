@@ -216,7 +216,7 @@ Example:
     call transfer(1,2,1000);
 
 ## Spatial Data
-tbd
+tbd (cf. PostGIS)
 
 
 # References

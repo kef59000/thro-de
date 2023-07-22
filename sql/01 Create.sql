@@ -8,7 +8,8 @@ CREATE TABLE customer (
     grp					varchar(255),
     art					varchar(255),
     latitude			numeric(17,10),
-    longitude			numeric(17,10)
+    longitude			numeric(17,10),
+    PRIMARY KEY         (id)
 );
 
 
@@ -18,7 +19,8 @@ CREATE TABLE plant (
     plz					varchar(255),
     ort					varchar(255),
     latitude			numeric(17,10),
-    longitude			numeric(17,10)
+    longitude			numeric(17,10),
+    PRIMARY KEY         (id)
 );
 
 

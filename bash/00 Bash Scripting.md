@@ -37,7 +37,7 @@ In your terminal, run the following code:
 
     nano my_bash.sh
 
-Enter [this code](./bash_01_First-Steps.sh).
+Enter [this code](<./01 First Steps.sh>).
 
 Search for your file in the directory:
 
@@ -70,10 +70,10 @@ Try the following again:
 
 
 # Exercise 2: Variables 1
-Create a bash file with [this code](./bash_02_Variables-1.sh). There are different options to determine the outcome...
+Create a bash file with [this code](<./02 Variables 1.sh>). There are different options to determine the outcome...
 
 # Exercise 3: Variables 2
-Create a bash file with [this code](./bash_03_Variables-2.sh). 
+Create a bash file with [this code](<./03 Variables 2.sh>). 
 
 ## Setting system variables
 Try the following
@@ -120,10 +120,10 @@ Type in the following code:
 
 
 # Exercise 4: Branching
-Create a bash file with [this code](./bash_04_Branching.sh). 
+Create a bash file with [this code](<./04 Branching.sh>). 
 
 # Exercise 5: Looping
-Create a bash file with [this code](./bash_05_Looping.sh).
+Create a bash file with [this code](<./05 Looping.sh>).
 
 Note:
 - **Ctrl + C** ...breaks an infinite loop.

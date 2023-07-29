@@ -450,4 +450,5 @@ The first stage will group properties by the property_type and include the name,
 Follow [this link](https://www.mongodb.com/docs/drivers/python/?utm_campaign=w3schools_mdb&utm_source=w3schools&utm_medium=referral).
 
 # References
-- [MongoDB Tutorial](https://www.w3schools.com/mongodb/index.php)
+- [MongoDB Tutorial (W3Schools)](https://www.w3schools.com/mongodb/index.php)
+- [MongoDB Tutorial (tutorialspoint)](https://www.tutorialspoint.com/mongodb/index.htm)

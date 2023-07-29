@@ -166,7 +166,8 @@ Let's exclude the date category field. All other fields will be included in the 
 To update an existing document we can use the **updateOne()** or **updateMany()** methods. The first parameter is a query object to define which document or documents should be updated. The second parameter is an object defining the updated data.
 
 ## updateOne()
-The **updateOne()** method will update the first document that is found matching the provided query. Let's see what the "like" count for the post with the title of "Post Title 1":
+The **updateOne()** method will update the first document that is found matching the provided query.
+Let's see what the "like" count for the post with the title of "Post Title 1":
 
     db.posts.find( { title: "Post Title 1" } ) 
 

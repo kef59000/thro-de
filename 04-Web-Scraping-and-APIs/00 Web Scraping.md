@@ -6,6 +6,8 @@ First, create a new project folder. In this project folder, create a new virtual
 
 Install the following packages:
 
+    pip install pandas
+    pip install requests
     pip install selenium
     pip install beautifulsoup4
     pip install pandas

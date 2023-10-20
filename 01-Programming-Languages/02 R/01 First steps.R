@@ -1,5 +1,5 @@
 
-setwd("C:/Users/LocalAdmin/Dropbox/Uni/Rosenheim/01 Lehre/04 Data Engineering/thro-de/r")
+# setwd("C:/Users/LocalAdmin/Dropbox/Uni/Rosenheim/01 Lehre/04 Data Engineering/thro-de/r")
 
 
 # Libraries ---------------------------------------------------------------

@@ -11,6 +11,8 @@ import pandas as pd
 import googlemaps
 import sqlite3
 
+os.chdir("/Users/kefo395/coding/thro-de/02-Web-Scraping-and-APIs")
+
 
 # %%
 driver = webdriver.Chrome()

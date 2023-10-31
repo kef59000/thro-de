@@ -1,11 +1,14 @@
 
 # %%
-# Import Libraries
+import os
+
 from bs4 import BeautifulSoup
 import requests
 import time
 import datetime
 import smtplib
+
+os.chdir("/Users/kefo395/coding/thro-de/02-Web-Scraping-and-APIs")
 
 
 # %%
@@ -44,7 +47,6 @@ print(today)
 
 
 # %%
-# Create CSV and write headers and data into the file
 import csv 
 
 header = ['Title', 'Price', 'Date']

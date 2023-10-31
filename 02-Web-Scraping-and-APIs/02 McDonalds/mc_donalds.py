@@ -1,7 +1,5 @@
 
 # %%
-import os
-
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions
@@ -9,19 +7,15 @@ from selenium.webdriver.common.by import By
 
 from bs4 import BeautifulSoup
 
-# import time
 import pandas as pd
 import googlemaps
 import sqlite3
 
 
 # %%
-os.chdir('C:\\Users\\F.Kellner\\Desktop\\Uni\\thro-de\\04-Web-Scraping-and-APIs')
-
-# PATH = "C:\\Users\\F.Kellner\\Desktop\\Uni\\thro-de\\04-Web-Scraping-and-APIs\\chromedriver.exe"
 driver = webdriver.Chrome()
 
-gmaps = googlemaps.Client(key='AIzaSyD5UWdKGiC092mYeyxRfHl159mcjlU-Awk')
+gmaps = googlemaps.Client(key='xxx')
 
 def get_parsed_data(url: str, wait_condition: str):
     driver.get(url)
@@ -113,5 +107,6 @@ for x in range(len(address_df)):
 address_df.to_csv("mc_donalds.csv", index=False, sep=';', decimal=',')
 
 driver.quit()
+
 
 # %%

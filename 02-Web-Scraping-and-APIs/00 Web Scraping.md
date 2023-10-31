@@ -10,20 +10,7 @@ Install the following packages:
     pip install requests
     pip install selenium
     pip install beautifulsoup4
-    pip install pandas
     pip install googlemaps
-
-Finally, install the Chrome Web Driver, which can be found here
-
-    https://sites.google.com/chromium.org/driver/
-
-Important! The Chrome Web Driver has to match the version of your Google Chrome browser!
-
-# Make you familiar with HTML documents
-Visit this website and inspect the HTML code:
-
-    http://www.scrapethissite.com/
-
 
 
 # References

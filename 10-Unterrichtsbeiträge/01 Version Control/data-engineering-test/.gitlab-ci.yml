@@ -1,0 +1,4 @@
+include:
+  - project: "studfranda8521/data-engineering-git-uebung"
+    ref: main
+    file: "shared/shared-pipeline.yml"

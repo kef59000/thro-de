@@ -1,0 +1,7 @@
+stages:
+  - print_hello
+
+print_hello:
+  stage: print_hello
+  script:
+    - echo "Hello from the Shared Pipeline!"

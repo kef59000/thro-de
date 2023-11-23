@@ -1,0 +1,16 @@
+{
+  "name": "data-engineering-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "service1": "pnpm --filter service1",
+    "service2": "pnpm --filter service2",
+    "service3": "pnpm --filter service3",
+    "start:all": "pnpm --filter \"./services/*\" run dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,35 @@
+version: '3' # Spezifiziert die Version von Docker Compose
+
+services: # Definiert die zu startenden Services (Container)
+  backend: # Name des ersten Services
+    container_name: backend # Definiert den Namen des Containers
+    hostname: backend # Definiert den Hostname des Containers
+    restart: unless-stopped # Neu starten, wenn der Container nicht gestoppt wurde
+    build: # Definiert den Build-Prozess
+      context: ./backend # Pfad zum Dockerfile
+      dockerfile: Dockerfile # Name des Dockerfiles
+    ports:
+      - '8080:8080' # Leitet Port 8080 des Containers auf Port 8080 des Hosts weiter
+    networks:
+      - database # Verbindet den Service mit dem Netzwerk "database"
+    depends_on:
+      - postgres # Service "postgres" muss gestartet sein, bevor dieser Service gestartet wird
+
+  postgres: # Name des zweiten Services
+    image: postgres:latest # Definiert zu verwendendes Image
+    restart: unless-stopped
+    volumes: # Definiert Volumes, die gemountet werden sollen
+      - ./postgres-data:/var/lib/postgresql/data # Persistiert Datenbankdaten
+    environment: # Definiert Umgebungsvariablen
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    ports:
+      - '5432:5432'
+    networks:
+      - database
+
+networks: # Definiert Netzwerke, die von den Services genutzt werden
+  database: # Name des Netzwerks
+    name: database # Name des Netzwerks
+    driver: bridge # Netzwerktyp (bridge, overlay, host, none)

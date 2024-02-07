@@ -1,0 +1,95 @@
+{
+  "PurchaseOrder": {
+    "SenderID": "4021851000000",
+    "ReceiverID": "4046006999999",
+    "PurchaseOrderNumber": "Trainer-123456",
+    "DocumentDate": "2018-08-22",
+    "DelieveryDateRequested": "2018-08-28",
+    "DelieveryDateEstimated": "2018-08-28",
+    "Address": [
+      {
+        "Type": "Supplier",
+        "GLN": "4046006999999",
+        "Name": "Test Supplier",
+        "Street": "Supplier Avenue 24",
+        "Postcode": "30880",
+        "Country": "Germany"
+      },
+      {
+        "Type": "Buyer",
+        "GLN": "4021851000000",
+        "Name": "Test Buyer",
+        "Street": "Buyer Avenue 11",
+        "Postcode": "57880",
+        "Country": "Germany"
+      },
+      {
+        "Type": "ShipTo",
+        "GLN": "4021851000001",
+        "Name": "Test Delieveryparty",
+        "Street": "Store Avenue 24",
+        "Postcode": "57882",
+        "Country": "Germany"
+      }
+    ],
+    "Currency": "USD",
+    "Items": {
+      "Item": [
+        {
+          "PosNo": "1",
+          "EAN": "4020616325034",
+          "SupplierArticleNo": "2503",
+          "BuyerPartNo": "447434",
+          "ItemDecription": "Delicious Choco-Balls 375 gr",
+          "Quantity": "36",
+          "MeasureUnit": "piece"
+        },
+        {
+          "PosNo": "2",
+          "EAN": "4020616225044",
+          "SupplierArticleNo": "2504",
+          "BuyerPartNo": "447445",
+          "ItemDecription": "Yummy Mini-Zimties 375 gr",
+          "Quantity": "84",
+          "MeasureUnit": "piece"
+        },
+        {
+          "PosNo": "3",
+          "EAN": "4016221228600",
+          "SupplierArticleNo": "2860",
+          "BuyerPartNo": "556863",
+          "ItemDecription": "Curry+Ketchup Extra",
+          "Quantity": "78",
+          "MeasureUnit": "piece"
+        },
+        {
+          "PosNo": "4",
+          "EAN": "4016221228594",
+          "SupplierArticleNo": "2859",
+          "BuyerPartNo": "556885",
+          "ItemDecription": "Toma Tina Kids-Ketchup",
+          "Quantity": "78",
+          "MeasureUnit": "piece"
+        },
+        {
+          "PosNo": "5",
+          "EAN": "4016221228501",
+          "SupplierArticleNo": "2850",
+          "BuyerPartNo": "556918",
+          "ItemDecription": "Tomatosauce fine 350 ml",
+          "Quantity": "95",
+          "MeasureUnit": "piece"
+        },
+        {
+          "PosNo": "6",
+          "EAN": "4016221228556",
+          "SupplierArticleNo": "2855",
+          "BuyerPartNo": "556929",
+          "ItemDecription": "Toma Tina Kidssauce",
+          "Quantity": "95",
+          "MeasureUnit": "piece"
+        }
+      ]
+    }
+  }
+}

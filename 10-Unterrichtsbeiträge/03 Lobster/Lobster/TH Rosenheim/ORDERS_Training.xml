@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<PurchaseOrder SenderID="4021851000000" ReceiverID="4046006999999" PurchaseOrderNumber="Trainer-123456">
+	<DocumentDate>22.08.2018</DocumentDate>
+	<DeliveryDateRequested>28.08.2018</DeliveryDateRequested>
+	<DeliveryDateEstimated>28.08.2018</DeliveryDateEstimated>
+	<Address Type="Buyer">
+		<GLN>4021851000000</GLN>
+		<Name>Test Buyer</Name>
+		<Street>Buyer Avenue 11</Street>
+		<Postcode>57880</Postcode>
+		<City>Buyervillage</City> 
+		<Country>Austria</Country>
+	</Address>
+	<Currency>USD</Currency>
+	<Items>
+		<Item PosNo="1">
+			<EAN>4020616325034</EAN>
+			<SupplierArticleNo>2503</SupplierArticleNo>
+			<BuyerPartNo>447434</BuyerPartNo>
+			<ItemDecription>Delicious Choco-Balls 375 gr</ItemDecription>
+			<Quantity>36</Quantity>
+			<MeasureUnit>piece</MeasureUnit>
+		</Item>
+		<Item PosNo="2">
+			<EAN>4020616225044</EAN>
+			<SupplierArticleNo>2504</SupplierArticleNo>
+			<BuyerPartNo>447445</BuyerPartNo>
+			<ItemDecription>Yummy Mini-Zimties 375 gr</ItemDecription>
+			<Quantity>84</Quantity>
+			<MeasureUnit>piece</MeasureUnit>
+		</Item>
+		<Item PosNo="3">
+			<EAN>4016221228600</EAN>
+			<SupplierArticleNo>2860</SupplierArticleNo>
+			<BuyerPartNo>556863</BuyerPartNo>
+			<ItemDecription>Curry+Ketchup Extra</ItemDecription>
+			<Quantity>78</Quantity>
+			<MeasureUnit>piece</MeasureUnit>
+		</Item>
+		<Item PosNo="4">
+			<EAN>4016221228594</EAN>
+			<SupplierArticleNo>2859</SupplierArticleNo>
+			<BuyerPartNo>556885</BuyerPartNo>
+			<ItemDecription>Toma Tina Kids-Ketchup</ItemDecription>
+			<Quantity>78</Quantity>
+			<MeasureUnit>piece</MeasureUnit>
+		</Item>
+		<Item PosNo="5">
+			<EAN>4016221228501</EAN>
+			<SupplierArticleNo>2850</SupplierArticleNo>
+			<BuyerPartNo>556918</BuyerPartNo>
+			<ItemDecription>Tomatosauce fine 350 ml</ItemDecription>
+			<Quantity>95</Quantity>
+			<MeasureUnit>piece</MeasureUnit>
+		</Item>
+		<Item PosNo="6">
+			<EAN>4016221228556</EAN>
+			<SupplierArticleNo>2855</SupplierArticleNo>
+			<BuyerPartNo>556929</BuyerPartNo>
+			<ItemDecription>Toma Tina Kidssauce</ItemDecription>
+			<Quantity>95</Quantity>
+			<MeasureUnit>piece</MeasureUnit>
+		</Item>
+	</Items>
+</PurchaseOrder>
